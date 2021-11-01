@@ -907,6 +907,7 @@
 		BDDD1EAE2632E6C200BA007B /* Appearance+SwiftUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDD1EAD2632E6C200BA007B /* Appearance+SwiftUI_Tests.swift */; };
 		BDEB9417268211EC00928AF1 /* ChatMessageListUnreadCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9416268211EC00928AF1 /* ChatMessageListUnreadCountView.swift */; };
 		C12873DF272FF00F00671E79 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = C12873DE272FF00F00671E79 /* Starscream */; };
+		C12873F2273003B900671E79 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = C12873F1273003B900671E79 /* SwiftyGif */; };
 		DA0BB1612513B5F200CAEFBD /* StringInterpolation+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BB1602513B5F200CAEFBD /* StringInterpolation+Extenstions.swift */; };
 		DA15A20424DF257500BE2423 /* ChannelQuery_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15A20224DF256F00BE2423 /* ChannelQuery_Tests.swift */; };
 		DA49714E2549C28000AC68C2 /* AttachmentDTO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49714D2549C28000AC68C2 /* AttachmentDTO_Tests.swift */; };
@@ -970,7 +971,6 @@
 		DB3CCF3F258CF7ED009D5E99 /* ChatMessageLinkPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CCF3E258CF7ED009D5E99 /* ChatMessageLinkPreviewView.swift */; };
 		DB70CFFB25702EB900DDF436 /* ChatMessagePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70CFFA25702EB900DDF436 /* ChatMessagePopupVC.swift */; };
 		DB8230F2259B8DBF00E7D7FE /* ChatMessageGiphyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8230F1259B8DBF00E7D7FE /* ChatMessageGiphyView.swift */; };
-		DB823107259C271C00E7D7FE /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = DB823106259C271C00E7D7FE /* SwiftyGif */; };
 		DB842E4525C9F94C000AAC46 /* LazyCachedMapCollection_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB842E4425C9F94C000AAC46 /* LazyCachedMapCollection_Tests.swift */; };
 		DB9A3D562582689A00555D36 /* ChatMessageListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9A3D552582689A00555D36 /* ChatMessageListRouter.swift */; };
 		DBC8A4BB257E5BFB00B20A82 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DBC8A4BD257E5BFB00B20A82 /* Localizable.stringsdict */; };
@@ -1380,6 +1380,16 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C12873E1272FF00F00671E79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12873F4273003B900671E79 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -2563,7 +2573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799ADAAF2563FFA1006D43F9 /* Nuke in Frameworks */,
-				DB823107259C271C00E7D7FE /* SwiftyGif in Frameworks */,
+				C12873F2273003B900671E79 /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5297,6 +5307,7 @@
 				790881F925432B7200896F03 /* Sources */,
 				790881FA25432B7200896F03 /* Frameworks */,
 				790881FB25432B7200896F03 /* Resources */,
+				C12873F4273003B900671E79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5306,7 +5317,7 @@
 			name = StreamChatUI;
 			packageProductDependencies = (
 				799ADAAE2563FFA1006D43F9 /* Nuke */,
-				DB823106259C271C00E7D7FE /* SwiftyGif */,
+				C12873F1273003B900671E79 /* SwiftyGif */,
 			);
 			productName = StreamChatUI;
 			productReference = 790881FD25432B7200896F03 /* StreamChatUI.framework */;
@@ -5646,9 +5657,9 @@
 			mainGroup = 8AD5EC8522E9A3E8005CFAC9;
 			packageReferences = (
 				799ADAAD2563FFA1006D43F9 /* XCRemoteSwiftPackageReference "Nuke" */,
-				DB823105259C271C00E7D7FE /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 				AD472EF625C425FB00A96E70 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				C12873DD272FF00F00671E79 /* XCRemoteSwiftPackageReference "Starscream" */,
+				C12873F0273003B900671E79 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 			);
 			productRefGroup = 8AD5EC9022E9A3E8005CFAC9 /* Products */;
 			projectDirPath = "";
@@ -8867,12 +8878,12 @@
 				kind = branch;
 			};
 		};
-		DB823105259C271C00E7D7FE /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+		C12873F0273003B900671E79 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			repositoryURL = "https://github.com/GetStream/SwiftyGif.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
+				branch = "dynamic-linking";
+				kind = branch;
 			};
 		};
 		E74DB0902656631700508D22 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
@@ -8901,9 +8912,9 @@
 			package = C12873DD272FF00F00671E79 /* XCRemoteSwiftPackageReference "Starscream" */;
 			productName = Starscream;
 		};
-		DB823106259C271C00E7D7FE /* SwiftyGif */ = {
+		C12873F1273003B900671E79 /* SwiftyGif */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DB823105259C271C00E7D7FE /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			package = C12873F0273003B900671E79 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
 			productName = SwiftyGif;
 		};
 		E74DB08F2656631700508D22 /* SnapshotTesting */ = {
