@@ -27,7 +27,7 @@ let package = Package(
         .package(url: "https://github.com/GetStream/Starscream.git", .branch("dynamic-linking")),
         
         // StreamChatUI
-        .package(url: "https://github.com/kean/Nuke.git", from: "10.0.0"),
+        .package(url: "https://github.com/GetStream/Nuke.git", .branch("dynamic-linking")),
         .package(url: "https://github.com/GetStream/SwiftyGif.git", .branch("dynamic-linking"))
     ],
     targets: [

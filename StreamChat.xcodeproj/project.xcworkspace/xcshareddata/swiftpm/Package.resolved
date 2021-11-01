@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Nuke",
-        "repositoryURL": "https://github.com/kean/Nuke",
+        "repositoryURL": "https://github.com/GetStream/Nuke",
         "state": {
-          "branch": null,
-          "revision": "472a03c15f39592007d94f25abe554350bc8aa2b",
-          "version": "10.5.1"
+          "branch": "dynamic-linking",
+          "revision": "c48db7dc589c1416e2aacf75de0825618fbfc374",
+          "version": null
         }
       },
       {
