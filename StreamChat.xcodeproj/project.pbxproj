@@ -344,7 +344,6 @@
 		79A0E9BB2498C31300E9BD50 /* TypingStartCleanupMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A0E9B92498C31300E9BD50 /* TypingStartCleanupMiddleware.swift */; };
 		79A0E9BC2498C31A00E9BD50 /* TypingStartCleanupMiddleware_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A0E9B82498C31300E9BD50 /* TypingStartCleanupMiddleware_Tests.swift */; };
 		79A0E9BE2498C33100E9BD50 /* TypingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A0E9BD2498C33100E9BD50 /* TypingEvent.swift */; };
-		79A4AE112536EE5500C32A74 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 79A4AE102536EE5500C32A74 /* Starscream */; };
 		79A9EAC3262045DC00F2A72D /* MessageRead+MissingUnreadCount.json in Resources */ = {isa = PBXBuildFile; fileRef = 79A9EAC2262045DC00F2A72D /* MessageRead+MissingUnreadCount.json */; };
 		79A9EB4D2625793000F2A72D /* CoreDataLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9EB4C2625793000F2A72D /* CoreDataLazy.swift */; };
 		79A9EB572625798000F2A72D /* CoreDataLazy_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9EB562625798000F2A72D /* CoreDataLazy_Tests.swift */; };
@@ -907,6 +906,7 @@
 		BDDD1EAC2632E32000BA007B /* AppearanceProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDD1EAB2632E32000BA007B /* AppearanceProvider_Tests.swift */; };
 		BDDD1EAE2632E6C200BA007B /* Appearance+SwiftUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDD1EAD2632E6C200BA007B /* Appearance+SwiftUI_Tests.swift */; };
 		BDEB9417268211EC00928AF1 /* ChatMessageListUnreadCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9416268211EC00928AF1 /* ChatMessageListUnreadCountView.swift */; };
+		C12873DF272FF00F00671E79 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = C12873DE272FF00F00671E79 /* Starscream */; };
 		DA0BB1612513B5F200CAEFBD /* StringInterpolation+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BB1602513B5F200CAEFBD /* StringInterpolation+Extenstions.swift */; };
 		DA15A20424DF257500BE2423 /* ChannelQuery_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15A20224DF256F00BE2423 /* ChannelQuery_Tests.swift */; };
 		DA49714E2549C28000AC68C2 /* AttachmentDTO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49714D2549C28000AC68C2 /* AttachmentDTO_Tests.swift */; };
@@ -1375,6 +1375,16 @@
 			files = (
 				79940B8D258398A500791EAE /* StreamChatUI.framework in Embed Frameworks */,
 				79940B89258398A500791EAE /* StreamChat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12873E1272FF00F00671E79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2603,7 +2613,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79A4AE112536EE5500C32A74 /* Starscream in Frameworks */,
+				C12873DF272FF00F00671E79 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5413,6 +5423,7 @@
 				799C9417247D2F80001F1104 /* Sources */,
 				799C9418247D2F80001F1104 /* Frameworks */,
 				799C9419247D2F80001F1104 /* Resources */,
+				C12873E1272FF00F00671E79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5420,7 +5431,7 @@
 			);
 			name = StreamChat;
 			packageProductDependencies = (
-				79A4AE102536EE5500C32A74 /* Starscream */,
+				C12873DE272FF00F00671E79 /* Starscream */,
 			);
 			productName = Sources;
 			productReference = 799C941B247D2F80001F1104 /* StreamChat.framework */;
@@ -5634,10 +5645,10 @@
 			);
 			mainGroup = 8AD5EC8522E9A3E8005CFAC9;
 			packageReferences = (
-				79A4AE0F2536EE5500C32A74 /* XCRemoteSwiftPackageReference "Starscream" */,
 				799ADAAD2563FFA1006D43F9 /* XCRemoteSwiftPackageReference "Nuke" */,
 				DB823105259C271C00E7D7FE /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 				AD472EF625C425FB00A96E70 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				C12873DD272FF00F00671E79 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = 8AD5EC9022E9A3E8005CFAC9 /* Products */;
 			projectDirPath = "";
@@ -8840,20 +8851,20 @@
 				minimumVersion = 10.0.0;
 			};
 		};
-		79A4AE0F2536EE5500C32A74 /* XCRemoteSwiftPackageReference "Starscream" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/daltoniam/Starscream.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.4;
-			};
-		};
 		AD472EF625C425FB00A96E70 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.8.2;
+			};
+		};
+		C12873DD272FF00F00671E79 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/Starscream.git";
+			requirement = {
+				branch = "dynamic-linking";
+				kind = branch;
 			};
 		};
 		DB823105259C271C00E7D7FE /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
@@ -8880,15 +8891,15 @@
 			package = 799ADAAD2563FFA1006D43F9 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
 		};
-		79A4AE102536EE5500C32A74 /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79A4AE0F2536EE5500C32A74 /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
 		AD472EF725C425FB00A96E70 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AD472EF625C425FB00A96E70 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		C12873DE272FF00F00671E79 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12873DD272FF00F00671E79 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 		DB823106259C271C00E7D7FE /* SwiftyGif */ = {
 			isa = XCSwiftPackageProductDependency;

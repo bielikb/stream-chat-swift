@@ -12,11 +12,11 @@
       },
       {
         "package": "Starscream",
-        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "repositoryURL": "https://github.com/GetStream/Starscream.git",
         "state": {
-          "branch": null,
-          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
-          "version": "4.0.4"
+          "branch": "dynamic-linking",
+          "revision": "ac55dc1c487896a95fbf31d275167b1aeab7610b",
+          "version": null
         }
       },
       {
