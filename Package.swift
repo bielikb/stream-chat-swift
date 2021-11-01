@@ -13,10 +13,12 @@ let package = Package(
     products: [
         .library(
             name: "StreamChat",
+            type: .dynamic,
             targets: ["StreamChat"]
         ),
         .library(
             name: "StreamChatUI",
+            type: .dynamic,
             targets: ["StreamChatUI"]
         )
     ],
