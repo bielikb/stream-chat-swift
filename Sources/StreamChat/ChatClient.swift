@@ -4,12 +4,19 @@
 
 import CoreData
 import Foundation
+import Starscream
 
 /// The root object representing a Stream Chat.
 ///
 /// Typically, an app contains just one instance of `ChatClient`. However, it's possible to have multiple instances if your use
 /// case requires it (i.e. more than one window with different workspaces in a Slack-like app).
 public class ChatClient {
+    static let socket = WebSocket(request: URLRequest(url: URL(string: "https://google.es")!))
+
+    public static func testMe() {
+        socket.connect()
+    }
+
     /// The `UserId` of the currently logged in user.
     @Atomic public internal(set) var currentUserId: UserId?
 
