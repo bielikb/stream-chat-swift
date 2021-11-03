@@ -2,7 +2,7 @@
 // Copyright © 2021 Stream.io Inc. All rights reserved.
 //
 
-import Nuke
+import StreamNuke
 import StreamChat
 import SwiftyGif
 import UIKit
@@ -59,14 +59,6 @@ open class ChatChannelListVC: _ViewController,
 
     /// Used for mapping `ListChanges` to sets of `IndexPath` and verifying possible conflicts
     private let collectionUpdatesMapper = CollectionUpdatesMapper()
-
-    public static func testMeGif() {
-        SwiftyGifManager.defaultManager.clear()
-    }
-
-    public static func testMeNuke() {
-        let processor = ImageProcessors.Resize.resize(size: .zero)
-    }
 
     override open func setUp() {
         super.setUp()

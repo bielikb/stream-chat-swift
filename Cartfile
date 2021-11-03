@@ -1,3 +1,2 @@
 github "GetStream/SwiftyGif" "dynamic-linking"
-github "kean/Nuke" ~> 10.0
 github "GetStream/Starscream" "dynamic-linking"
