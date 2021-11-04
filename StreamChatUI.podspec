@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
     spec.social_media_url = "https://getstream.io"
     spec.swift_version = "5.2"
     spec.platform = :ios, "11.0"
-    spec.source = { :git => "https://github.com/GetStream/stream-chat-swift.git", :tag => "#{spec.version}" }
+    spec.source = { :git => "https://github.com/GetStream/stream-chat-swift.git" }
     spec.requires_arc = true
   
     spec.source_files = "Sources/StreamChatUI/**/*.swift"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   
     spec.framework = "Foundation", "UIKit"
   
-    spec.dependency "StreamChat", "#{spec.version}"
+    spec.dependency "StreamChat"
     spec.dependency "Nuke", "~> 10.0"
     spec.dependency "SwiftyGif", "~> 5.0"
   end

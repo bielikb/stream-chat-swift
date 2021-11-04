@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '11.0'
   spec.osx.deployment_target  = '10.15'
 
-  spec.source = { :git => "https://github.com/GetStream/stream-chat-swift.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/GetStream/stream-chat-swift.git" }
   spec.requires_arc = true
 
   spec.source_files  = "Sources/StreamChat/**/*.swift"
