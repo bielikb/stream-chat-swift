@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = "BorisStreamChatUI"
-    spec.version = "4.3.0"
+    spec.version = "4.3.2"
     spec.summary = "StreamChat UI Components"
     spec.description = "StreamChatUI SDK offers flexible UI components able to display data provided by StreamChat SDK."
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
     spec.framework = "Foundation", "UIKit"
 
-    spec.dependency "StreamChat", "#{spec.version}"
+    spec.dependency "BorisStreamChat", "#{spec.version}"
     spec.dependency "Nuke", "~> 10.0"
     spec.dependency "SwiftyGif", "~> 5.0"
   end
